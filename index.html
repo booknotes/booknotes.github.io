@@ -1,0 +1,2907 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="generator" content="Hugo 0.20.2" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>DataTables example - Setting defaults</title>
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" language="javascript" src="js/main.js"></script>
+</head>
+<body class="medium-8 row">
+
+<div class="large">
+<div class="row column text-center">
+<h1>Book notes</h1>
+</div>
+</div>
+
+<script src="http://listjs.com/assets/javascripts/list.min.js"></script>
+
+  
+
+<div id="book_notes">
+  <table cellspacing="0" width="100%" id='book-notes'>
+    <thead>
+      <tr>
+        <th class="sort" data-sort="author">Author</th>
+        <th class="sort" data-sort="title">Title</th>
+        <th class="sort" data-sort="review_author">Review Author</th>
+      </tr>
+    </thead>
+  <tbody class="list">
+  
+  
+    <tr>
+      <th class="author">Nicholas Epley</th>
+      <th class="title"><a href="https://sivers.org/book/Mindwise">Mindwise: How We Understand What Others Think, Believe, Feel, and Want</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Cal Newport</th>
+      <th class="title"><a href="https://sivers.org/book/SoGood">So Good They Can&#39;t Ignore You</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Steven Pressfield</th>
+      <th class="title"><a href="https://sivers.org/book/WarOfArt">The War of Art</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Daniel Kahneman</th>
+      <th class="title"><a href="https://sivers.org/book/ThinkingFastAndSlow">Thinking, Fast and Slow</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">William Irvine</th>
+      <th class="title"><a href="https://sivers.org/book/StoicJoy">A Guide to the Good Life: The Ancient Art of Stoic Joy</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Philip Zimbardo and John Boyd</th>
+      <th class="title"><a href="https://sivers.org/book/TimeParadox">The Time Paradox</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Daniel Gilbert</th>
+      <th class="title"><a href="https://sivers.org/book/StumblingOnHappiness">Stumbling on Happiness</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Michael Gerber</th>
+      <th class="title"><a href="https://sivers.org/book/EMythRevisited">E-Myth Revisited</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Seth Godin</th>
+      <th class="title"><a href="https://sivers.org/book/Dip">The Dip</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Derren Brown</th>
+      <th class="title"><a href="https://sivers.org/book/Happy">Happy</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Gilles Asselin and Ruth Mastron</th>
+      <th class="title"><a href="https://sivers.org/book/AuContraire">Au Contraire: Figuring Out the French</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Mark Manson</th>
+      <th class="title"><a href="https://sivers.org/book/NotFuck">The Subtle Art of Not Giving a Fuck</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ryan Holiday</th>
+      <th class="title"><a href="https://sivers.org/book/EgoEnemy">Ego Is the Enemy</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Arnold Schwarzenegger</th>
+      <th class="title"><a href="https://sivers.org/book/TotalRecall">Total Recall</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Gordon Livingston</th>
+      <th class="title"><a href="https://sivers.org/book/30TrueThings">Too Soon Old, Too Late Smart: Thirty True Things You Need to Know Now</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Peter Thiel and Blake Masters</th>
+      <th class="title"><a href="https://sivers.org/book/ZeroToOne">Zero to One</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Marvin Harris</th>
+      <th class="title"><a href="https://sivers.org/book/CowsPigsWarsWitches">Cows, Pigs, Wars, and Witches</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Darren Hardy</th>
+      <th class="title"><a href="https://sivers.org/book/RollerCoaster">The Entrepreneur Roller Coaster</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">William Zinsser</th>
+      <th class="title"><a href="https://sivers.org/book/OnWritingWell">On Writing Well</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Pema ChÃ¶drÃ¶n</th>
+      <th class="title"><a href="https://sivers.org/book/WisdomOfNoEscape">The Wisdom of No Escape</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Pema ChÃ¶drÃ¶n</th>
+      <th class="title"><a href="https://sivers.org/book/WhenThingsFallApart">When Things Fall Apart</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Gabriel Wyner</th>
+      <th class="title"><a href="https://sivers.org/book/FluentForever">Fluent Forever</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Darren Hardy</th>
+      <th class="title"><a href="https://sivers.org/book/CompoundEffect">The Compound Effect</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Richard D. Lewis</th>
+      <th class="title"><a href="https://sivers.org/book/WhenCulturesCollide">When Cultures Collide</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Oliver Burkeman</th>
+      <th class="title"><a href="https://sivers.org/book/Antidote">The Antidote: Happiness for People Who Can&#39;t Stand Positive Thinking</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Austin Kleon</th>
+      <th class="title"><a href="https://sivers.org/book/ShowYourWork">Show Your Work</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ralph Waldo Emerson</th>
+      <th class="title"><a href="https://sivers.org/book/SelfReliance">Self Reliance</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Nassim Nicholas Taleb</th>
+      <th class="title"><a href="https://sivers.org/book/Antifragile">Antifragile</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Kelly McGonigal</th>
+      <th class="title"><a href="https://sivers.org/book/WillpowerInstinct">The Willpower Instinct</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Steven Pressfield</th>
+      <th class="title"><a href="https://sivers.org/book/TurningPro">Turning Pro</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Susan Cain</th>
+      <th class="title"><a href="https://sivers.org/book/Quiet">Quiet</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Kevin Kelly</th>
+      <th class="title"><a href="https://sivers.org/book/WhatTechnologyWants">What Technology Wants</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Steven Pressfield</th>
+      <th class="title"><a href="https://sivers.org/book/DoTheWork">Do the Work</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Marshall Goldsmith</th>
+      <th class="title"><a href="https://sivers.org/book/WhatGotYouThere">What Got You Here Won&#39;t Get You There</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Josh Kaufman</th>
+      <th class="title"><a href="https://sivers.org/book/PersonalMBA">The Personal MBA</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Daniel Pink</th>
+      <th class="title"><a href="https://sivers.org/book/Drive">Drive</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Chip Heath and Dan Heath</th>
+      <th class="title"><a href="https://sivers.org/book/Switch">Switch</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">by Jonathan Haidt</th>
+      <th class="title"><a href="https://sivers.org/book/HappinessHypothesis">The Happiness Hypothesis</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Robert Cialdini</th>
+      <th class="title"><a href="https://sivers.org/book/Influence">Influence</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Steve Pavlina</th>
+      <th class="title"><a href="https://sivers.org/book/PersonalDevelopmentForSmartPeople">Personal Development for Smart People</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Dan Ariely</th>
+      <th class="title"><a href="https://sivers.org/book/PredictablyIrrational">Predictably Irrational</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Chet Holmes</th>
+      <th class="title"><a href="https://sivers.org/book/UltimateSalesMachine">The Ultimate Sales Machine</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Tim Ferriss</th>
+      <th class="title"><a href="https://sivers.org/book/4HourWorkWeek">The 4-Hour Work Week</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Daniel R. Solin</th>
+      <th class="title"><a href="https://sivers.org/book/SmartestInvestmentBook">The Smartest Investment Book You&#39;ll Ever Read</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">James Surowiecki</th>
+      <th class="title"><a href="https://sivers.org/book/WisdomOfCrowds">The Wisdom of Crowds</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Barry Schwartz</th>
+      <th class="title"><a href="https://sivers.org/book/ParadoxOfChoice">The Paradox of Choice - Why More is Less</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Chip Heath and Dan Heath</th>
+      <th class="title"><a href="https://sivers.org/book/MadeToStick">Made to Stick</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Adrian Slywotzky</th>
+      <th class="title"><a href="https://sivers.org/book/ArtOfProfitability">The Art of Profitability</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jared Diamond</th>
+      <th class="title"><a href="https://sivers.org/book/GunsGermsSteel">Guns, Germs, and Steel</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Austin Kleon</th>
+      <th class="title"><a href="https://sivers.org/book/StealLikeAnArtist">Steal Like an Artist</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Eric Weiner</th>
+      <th class="title"><a href="https://sivers.org/book/GeographyOfGenius">The Geography of Genius</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Barbara Oakley</th>
+      <th class="title"><a href="https://sivers.org/book/MindForNumbers">A Mind for Numbers</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Shane Snow</th>
+      <th class="title"><a href="https://sivers.org/book/Smartcuts">Smartcuts</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Tynan</th>
+      <th class="title"><a href="https://sivers.org/book/SuperhumanByHabit">Superhuman by Habit</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ryan Holiday</th>
+      <th class="title"><a href="https://sivers.org/book/ObstacleIsTheWay">The Obstacle Is the Way</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Chip and Dan Heath</th>
+      <th class="title"><a href="https://sivers.org/book/Decisive">Decisive</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Scott Adams</th>
+      <th class="title"><a href="https://sivers.org/book/HowToFail">How to Fail at Almost Everything and Still Win Big</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Edward B. Burger and Michael Starbird</th>
+      <th class="title"><a href="https://sivers.org/book/EffectiveThinking">5 Elements of Effective Thinking</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Seth Godin</th>
+      <th class="title"><a href="https://sivers.org/book/IcarusDeception">The Icarus Deception</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Robert Greene</th>
+      <th class="title"><a href="https://sivers.org/book/Mastery2">Mastery</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">George Leonard</th>
+      <th class="title"><a href="https://sivers.org/book/Mastery">Mastery</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Daniel Coyle</th>
+      <th class="title"><a href="https://sivers.org/book/LittleBookOfTalent">The Little Book of Talent</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Fredrik HÃ¤rÃ©n</th>
+      <th class="title"><a href="https://sivers.org/book/DevelopingWorld">The Developing World</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Roy Baumeister and John Tierney</th>
+      <th class="title"><a href="https://sivers.org/book/Willpower">Willpower</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jim Loehr and Tony Schwartz</th>
+      <th class="title"><a href="https://sivers.org/book/PowerOfFullEngagement">Power of Full Engagement</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Joshua Foer</th>
+      <th class="title"><a href="https://sivers.org/book/MoonwalkingEinstein">Moonwalking with Einstein</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Thomas Sterner</th>
+      <th class="title"><a href="https://sivers.org/book/PracticingMind">Practicing Mind</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Peter Bevelin</th>
+      <th class="title"><a href="https://sivers.org/book/SeekingWisdom">Seeking Wisdom</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Carol Dweck</th>
+      <th class="title"><a href="https://sivers.org/book/Mindset">Mindset</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David Bayles and Ted Orland</th>
+      <th class="title"><a href="https://sivers.org/book/ArtAndFear">Art and Fear</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Rob Walling and Mike Taber</th>
+      <th class="title"><a href="https://sivers.org/book/StartSmallStaySmall">Start Small, Stay Small</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Stephen King</th>
+      <th class="title"><a href="https://sivers.org/book/OnWriting">On Writing</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Eric Weiner</th>
+      <th class="title"><a href="https://sivers.org/book/GeographyOfBliss">The Geography of Bliss</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">William J. Bernstein</th>
+      <th class="title"><a href="https://sivers.org/book/InvestorsManifesto">The Investor&#39;s Manifesto</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jonah Lehrer</th>
+      <th class="title"><a href="https://sivers.org/book/HowWeDecide">How We Decide</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David Eagleman</th>
+      <th class="title"><a href="https://sivers.org/book/Sum">Sum: Forty Tales from the Afterlives</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Daniel Coyle</th>
+      <th class="title"><a href="https://sivers.org/book/TalentCode">The Talent Code</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Hugh MacLeod</th>
+      <th class="title"><a href="https://sivers.org/book/IgnoreEverybody">Ignore Everybody</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Seth Godin</th>
+      <th class="title"><a href="https://sivers.org/book/Tribes">Tribes</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Leil Lowndes</th>
+      <th class="title"><a href="https://sivers.org/book/HowToTalkToAnyone">How to Talk to Anyone</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">John Medina</th>
+      <th class="title"><a href="https://sivers.org/book/BrainRules">Brain Rules</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Harry Beckwith</th>
+      <th class="title"><a href="https://sivers.org/book/YouInc">You, Inc -  The Art of Selling Yourself</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Felix Dennis</th>
+      <th class="title"><a href="https://sivers.org/book/HowToGetRich">How to Get Rich</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Clayton Christensen</th>
+      <th class="title"><a href="https://sivers.org/book/InnovatorsSolution">The Innovator&#39;s Solution</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Seth Godin</th>
+      <th class="title"><a href="https://sivers.org/book/SmallIsTheNewBig">Small is the New Big</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David Allen</th>
+      <th class="title"><a href="https://sivers.org/book/GettingThingsDone">Getting Things Done</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Robert Greene and Joost Elffers</th>
+      <th class="title"><a href="https://sivers.org/book/48LawsOfPower">The 48 Laws of Power</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">M. Scott Peck</th>
+      <th class="title"><a href="https://sivers.org/book/RoadLessTraveled">The Road Less Traveled</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Angela Duckworth</th>
+      <th class="title"><a href="https://sivers.org/book/Grit">Grit</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Adele Fabe and Elaine Mazlish</th>
+      <th class="title"><a href="https://sivers.org/book/TalkListenKids">How to Talk So Kids Will Listen &amp; Listen So Kids Will Talk</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Alison Gopnik</th>
+      <th class="title"><a href="https://sivers.org/book/GardenerCarpenter">The Gardener and the Carpenter</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Kevin Kelly</th>
+      <th class="title"><a href="https://sivers.org/book/Inevitable">The Inevitable</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Anders Ericsson</th>
+      <th class="title"><a href="https://sivers.org/book/Peak">Peak: Secrets from the New Science of Expertise</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Cal Newport</th>
+      <th class="title"><a href="https://sivers.org/book/DeepWork">Deep Work</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Robert Levine</th>
+      <th class="title"><a href="https://sivers.org/book/GeographyOfTime">Geography of Time</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Paul Pimsleur</th>
+      <th class="title"><a href="https://sivers.org/book/LearnForeignLanguage">How to Learn a Foreign Language</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Viktor Frankl</th>
+      <th class="title"><a href="https://sivers.org/book/MSfM">Man&#39;s Search for Meaning</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">James Altucher</th>
+      <th class="title"><a href="https://sivers.org/book/ChooseYourself">Choose Yourself!</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Dan S. Kennedy</th>
+      <th class="title"><a href="https://sivers.org/book/NoBSTime">No B.S. Time Management for Entrepreneurs</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Charles Duhigg</th>
+      <th class="title"><a href="https://sivers.org/book/PowerOfHabit">The Power of Habit</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Chad Fowler</th>
+      <th class="title"><a href="https://sivers.org/book/PassionateProgrammer">The Passionate Programmer</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Harry Browne</th>
+      <th class="title"><a href="https://sivers.org/book/FailSafeInvesting">Fail-Safe Investing</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Seth Godin</th>
+      <th class="title"><a href="https://sivers.org/book/PokeTheBox">Poke the Box</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Tim Ferriss</th>
+      <th class="title"><a href="https://sivers.org/book/4HourBody">The 4-Hour Body</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Clay Shirky</th>
+      <th class="title"><a href="https://sivers.org/book/CognitiveSurplus">Cognitive Surplus</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Paul Graham</th>
+      <th class="title"><a href="https://sivers.org/book/HackersPainters">Hackers &amp; Painters</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Scott Berkun</th>
+      <th class="title"><a href="https://sivers.org/book/ConfessionsPublicSpeaker">Confessions of a Public Speaker</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ramit Sethi</th>
+      <th class="title"><a href="https://sivers.org/book/IWillTeachYouToBeRich">I Will Teach You To Be Rich</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Gilovich and Belsky</th>
+      <th class="title"><a href="https://sivers.org/book/BigMoneyMistakes">Why Smart People Make Big Money Mistakes</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">by Jeff Jarvis</th>
+      <th class="title"><a href="https://sivers.org/book/WhatWouldGoogleDo">What Would Google Do?</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jeff Howe</th>
+      <th class="title"><a href="https://sivers.org/book/Crowdsourcing">CrowdSourcing</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David Schwartz</th>
+      <th class="title"><a href="https://sivers.org/book/MagicOfThinkingBig">The Magic of Thinking Big</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Josh Waitzkin</th>
+      <th class="title"><a href="https://sivers.org/book/ArtOfLearning">The Art of Learning</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Don Tapscott and Anthony Williams</th>
+      <th class="title"><a href="https://sivers.org/book/Wikinomics">Wikinomics</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Seth Godin</th>
+      <th class="title"><a href="https://sivers.org/book/MeatballSundae">Meatball Sundae</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Steve Krug</th>
+      <th class="title"><a href="https://sivers.org/book/DontMakeMeThink">Don&#39;t Make Me Think</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Steven Pressfield</th>
+      <th class="title"><a href="https://sivers.org/book/NobodyWants">Nobody Wants to Read Your Sh*t</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Andrew Tobias</th>
+      <th class="title"><a href="https://sivers.org/book/OnlyInvestmentGuide">The Only Investment Guide You&#39;ll Ever Need</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Pema ChÃ¶drÃ¶n</th>
+      <th class="title"><a href="https://sivers.org/book/LivingBeautifully">Living Beautifully with Uncertainty and Change</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Greg Nees</th>
+      <th class="title"><a href="https://sivers.org/book/GermanyEnigma">Germany: Unraveling an Enigma</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Adam M. Grant</th>
+      <th class="title"><a href="https://sivers.org/book/GiveAndTake">Give and Take</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Nassim Nicholas Taleb</th>
+      <th class="title"><a href="https://sivers.org/book/BedOfProcrustes">The Bed of Procrustes</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Scott Belsky</th>
+      <th class="title"><a href="https://sivers.org/book/MakingIdeasHappen">Making Ideas Happen</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Bill Bryson</th>
+      <th class="title"><a href="https://sivers.org/book/ShortHistoryNE">A Short History of Nearly Everything</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Sebastian Marshall</th>
+      <th class="title"><a href="https://sivers.org/book/Ikigai">Ikigai</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Lisa Cron</th>
+      <th class="title"><a href="https://sivers.org/book/WiredForStory">Wired for Story</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Andy Hunt and David Thomas</th>
+      <th class="title"><a href="https://sivers.org/book/PragmaticProgrammer">Pragmatic Programmer</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Marcus Aurelius - translation by C Scot Hicks and David V Hicks</th>
+      <th class="title"><a href="https://sivers.org/book/Meditations">Meditations</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David McRaney</th>
+      <th class="title"><a href="https://sivers.org/book/NotSoSmart">You Are Not So Smart</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Eric Ries</th>
+      <th class="title"><a href="https://sivers.org/book/LeanStartup">The Lean Startup</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Daniel G. Amen</th>
+      <th class="title"><a href="https://sivers.org/book/GoodBrainGreat">Making a Good Brain Great</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Richard Branson</th>
+      <th class="title"><a href="https://sivers.org/book/BusinessStrippedBare">Business Stripped Bare</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Geoff Colvin</th>
+      <th class="title"><a href="https://sivers.org/book/TalentIsOverrated">Talent Is Overrated</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Keith Ferrazzi and Tahl Raz</th>
+      <th class="title"><a href="https://sivers.org/book/NeverEatAlone">Never Eat Alone</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">John Eliot</th>
+      <th class="title"><a href="https://sivers.org/book/Overachievement">Overachievement</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Sonja Lyubomirsky</th>
+      <th class="title"><a href="https://sivers.org/book/HowOfHappiness">The How of Happiness</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Clotaire Rapaille</th>
+      <th class="title"><a href="https://sivers.org/book/CultureCode">The Culture Code</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">William Bernstein</th>
+      <th class="title"><a href="https://sivers.org/book/FourPillarsOfInvesting">The Four Pillars of Investing</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Clay Shirky</th>
+      <th class="title"><a href="https://sivers.org/book/HereComesEverybody">Here Comes Everybody</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Douglas Atkin</th>
+      <th class="title"><a href="https://sivers.org/book/CultingOfBrands">The Culting of Brands</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Larry Bossidy and Ram Charan</th>
+      <th class="title"><a href="https://sivers.org/book/Execution">Execution</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Brian Tracy</th>
+      <th class="title"><a href="https://sivers.org/book/MaximumAchievement">Maximum Achievement</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ryan Holiday</th>
+      <th class="title"><a href="https://sivers.org/book/DailyStoic">The Daily Stoic</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Harry Browne</th>
+      <th class="title"><a href="https://sivers.org/book/FoundFreedomUnfree">How I Found Freedom in an Unfree World</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Steven Pinker</th>
+      <th class="title"><a href="https://sivers.org/book/SenseOfStyle">The Sense of Style</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Russ Roberts</th>
+      <th class="title"><a href="https://sivers.org/book/AdamSmith">How Adam Smith Can Change Your Life</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Mason Currey</th>
+      <th class="title"><a href="https://sivers.org/book/DailyRituals">Daily Rituals: How Artists Work</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jean-Benoit Nadeau and Julie Barlow</th>
+      <th class="title"><a href="https://sivers.org/book/StoryOfFrench">The Story of French</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Aldous Huxley</th>
+      <th class="title"><a href="https://sivers.org/book/Island">Island</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David Allen</th>
+      <th class="title"><a href="https://sivers.org/book/ReadyForAnything">Ready for Anything</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Mark Rippetoe</th>
+      <th class="title"><a href="https://sivers.org/book/StartingStrength">Starting Strength</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Neil Fiore</th>
+      <th class="title"><a href="https://sivers.org/book/NowHabit">The Now Habit</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jack Kornfield</th>
+      <th class="title"><a href="https://sivers.org/book/MeditationForBeginners">Meditation for Beginners</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jim Rogers</th>
+      <th class="title"><a href="https://sivers.org/book/GiftToMyChildren">A Gift to My Children</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Seth Godin</th>
+      <th class="title"><a href="https://sivers.org/book/Linchpin">Linchpin</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Richard Dawkins</th>
+      <th class="title"><a href="https://sivers.org/book/SelfishGene">The Selfish Gene</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Richard Thaler and Cass Sunstein</th>
+      <th class="title"><a href="https://sivers.org/book/Nudge">Nudge</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">D.Q. McInerny</th>
+      <th class="title"><a href="https://sivers.org/book/BeingLogical">Being Logical: A Guide to Good Thinking</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Staffan NÃ¶teberg</th>
+      <th class="title"><a href="https://sivers.org/book/Pomodoro">Pomodoro Technique Illustrated</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Andy Hunt</th>
+      <th class="title"><a href="https://sivers.org/book/PragmaticThinking">Pragmatic Thinking and Learning</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Mark Joyner</th>
+      <th class="title"><a href="https://sivers.org/book/GreatFormula">The Great Formula</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Malcolm Gladwell</th>
+      <th class="title"><a href="https://sivers.org/book/Outliers">Outliers: The Story of Success</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Bo Peabody</th>
+      <th class="title"><a href="https://sivers.org/book/LuckyOrSmart">Lucky Or Smart?</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Campbell and Campbell</th>
+      <th class="title"><a href="https://sivers.org/book/ChinaStudy">The China Study</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Leo Babuta</th>
+      <th class="title"><a href="https://sivers.org/book/PowerOfLess">The Power of Less</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Stuart Levine</th>
+      <th class="title"><a href="https://sivers.org/book/CutToTheChase">Cut to the Chase</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ram Charan with Geri Willigan</th>
+      <th class="title"><a href="https://sivers.org/book/KnowHow">Know-How</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Scott Berkun</th>
+      <th class="title"><a href="https://sivers.org/book/ProjectManagement">The Art of Project Management</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Richard Nisbett</th>
+      <th class="title"><a href="https://sivers.org/book/Mindware">Mindware: Tools for Smart Thinking</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Dan John</th>
+      <th class="title"><a href="https://sivers.org/book/NeverLetGo">Never Let Go</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">George Prochnik</th>
+      <th class="title"><a href="https://sivers.org/book/PursuitOfSilence">In Pursuit of Silence</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Matthew May</th>
+      <th class="title"><a href="https://sivers.org/book/LawsOfSubtraction">The Laws of Subtraction</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">A. J. Jacobs</th>
+      <th class="title"><a href="https://sivers.org/book/DropDeadHealthy">Drop Dead Healthy</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Peter Sims</th>
+      <th class="title"><a href="https://sivers.org/book/LittleBets">Little Bets</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Stephen Key</th>
+      <th class="title"><a href="https://sivers.org/book/OneSimpleIdea">One Simple Idea</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Leo Babauta</th>
+      <th class="title"><a href="https://sivers.org/book/Focus">Focus</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Dan Ariely</th>
+      <th class="title"><a href="https://sivers.org/book/UpsideOfIrrationality">The Upside of Irrationality</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Adrian Slywotzky</th>
+      <th class="title"><a href="https://sivers.org/book/ProfitZone">The Profit Zone</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Craig Sorti</th>
+      <th class="title"><a href="https://sivers.org/book/SpeakingOfIndia">Speaking of India</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Losing My Virginity</th>
+      <th class="title"><a href="https://sivers.org/book/RichardBranson">Richard Branson</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jim Rohn</th>
+      <th class="title"><a href="https://sivers.org/book/InspiredLife">Leading an Inspired Life</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Gordon Livingston</th>
+      <th class="title"><a href="https://sivers.org/book/NeverStopDancing">And Never Stop Dancing</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Leonard Mlodinow</th>
+      <th class="title"><a href="https://sivers.org/book/Drunkard">The Drunkard&#39;s Walk: How Randomness Rules Our Lives</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Donald Sull</th>
+      <th class="title"><a href="https://sivers.org/book/SimpleRules">Simple Rules: How to Thrive in a Complex World</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Richard Wiseman</th>
+      <th class="title"><a href="https://sivers.org/book/Quirkology">Quirkology</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Roy Peter Clark</th>
+      <th class="title"><a href="https://sivers.org/book/WritingTools">Writing Tools</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Warren Berger</th>
+      <th class="title"><a href="https://sivers.org/book/MoreBeautifulQuestion">A More Beautiful Question</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Peter Brown</th>
+      <th class="title"><a href="https://sivers.org/book/MakeItStick">Make It Stick</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">James and Claudia Altucher</th>
+      <th class="title"><a href="https://sivers.org/book/PowerOfNo">The Power of No</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Anthony Metivier</th>
+      <th class="title"><a href="https://sivers.org/book/MemorizeFrench">How to Learn and Memorize French Vocabulary</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Atul Gawande</th>
+      <th class="title"><a href="https://sivers.org/book/ChecklistManifesto">The Checklist Manifesto</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Pierre Mornell</th>
+      <th class="title"><a href="https://sivers.org/book/HiringSmart">Hiring Smart</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Tyler Cowen</th>
+      <th class="title"><a href="https://sivers.org/book/InnerEconomist">Discover Your Inner Economist</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Charlie Todd</th>
+      <th class="title"><a href="https://sivers.org/book/CausingAScene">Causing a Scene</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Christopher McDougall</th>
+      <th class="title"><a href="https://sivers.org/book/BornToRun">Born to Run</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Martin Fridson</th>
+      <th class="title"><a href="https://sivers.org/book/HowToBeABillionaire">How to be a Billionaire</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">John Bogle</th>
+      <th class="title"><a href="https://sivers.org/book/Enough">Enough</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Richard Farson</th>
+      <th class="title"><a href="https://sivers.org/book/ManagementOfTheAbsurd">Management of the Absurd</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Guy Kawasaki</th>
+      <th class="title"><a href="https://sivers.org/book/RealityCheck">Reality Check</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Nassim Nicholas Taleb</th>
+      <th class="title"><a href="https://sivers.org/book/FooledByRandomness">Fooled by Randomness</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Michael Russer</th>
+      <th class="title"><a href="https://sivers.org/book/ObsoleteEmployee">The Obsolete Employee</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">T. Harv Ecker</th>
+      <th class="title"><a href="https://sivers.org/book/MillionaireMind">Secrets of the Millionaire Mind</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Patrick Dixon</th>
+      <th class="title"><a href="https://sivers.org/book/FutureAlmostEverything">The Future of Almost Everything</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David M. Friedman</th>
+      <th class="title"><a href="https://sivers.org/book/WildeInAmerica">Wilde in America</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Melanie Mitchell</th>
+      <th class="title"><a href="https://sivers.org/book/Complexity">Complexity: A Guided Tour</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Kenneth L. Higbee</th>
+      <th class="title"><a href="https://sivers.org/book/YourMemory">Your Memory</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Alison Gopnik</th>
+      <th class="title"><a href="https://sivers.org/book/PhilosophicalBaby">The Philosophical Baby</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Lou Adler</th>
+      <th class="title"><a href="https://sivers.org/book/HireWithYourHead">Hire With Your Head</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Alain De Botton</th>
+      <th class="title"><a href="https://sivers.org/book/PleasuresAndSorrowsOfWork">The Pleasures and Sorrows of Work</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Steve Martin</th>
+      <th class="title"><a href="https://sivers.org/book/BornStandingUp">Born Standing Up</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Elizabeth Gilbert</th>
+      <th class="title"><a href="https://sivers.org/book/Committed">Committed</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Malcolm Gladwell</th>
+      <th class="title"><a href="https://sivers.org/book/WhatTheDogSaw">What the Dog Saw</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Rob Gifford</th>
+      <th class="title"><a href="https://sivers.org/book/ChinaRoad">China Road</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jim Rogers</th>
+      <th class="title"><a href="https://sivers.org/book/HotCommodities">Hot Commodities</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Gene Simmons</th>
+      <th class="title"><a href="https://sivers.org/book/MeInc">Me, Inc.</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Anne Lamott</th>
+      <th class="title"><a href="https://sivers.org/book/BirdByBird">Bird by Bird</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Douglas Rushkoff and Leland Purvis</th>
+      <th class="title"><a href="https://sivers.org/book/PgOrBPg">Program or Be Programmed</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Bud Labitan</th>
+      <th class="title"><a href="https://sivers.org/book/FourFilters">The Four Filters Invention of Warren Buffett and Charlie Munger</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Haruki Murakami</th>
+      <th class="title"><a href="https://sivers.org/book/TalkAboutRunning">What I Talk About When I Talk About Running</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Stuart Skorman</th>
+      <th class="title"><a href="https://sivers.org/book/SerialEntrepreneur">Confessions of a Serial Entrepreneur</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Philip K. Howard</th>
+      <th class="title"><a href="https://sivers.org/book/LifeWithoutLawyers">Life Without Lawyers</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Neal Ford</th>
+      <th class="title"><a href="https://sivers.org/book/ProductiveProgrammer">The Productive Programmer</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Peter Schiff</th>
+      <th class="title"><a href="https://sivers.org/book/CrashProof">Crash Proof 2.0</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Winifred Gallagher</th>
+      <th class="title"><a href="https://sivers.org/book/Rapt">Rapt</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Brad Blanton</th>
+      <th class="title"><a href="https://sivers.org/book/RadicalHonesty">Radical Honesty</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jim Rogers</th>
+      <th class="title"><a href="https://sivers.org/book/BullInChina">A Bull in China</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jessica Livingston</th>
+      <th class="title"><a href="https://sivers.org/book/FoundersAtWork">Founders at Work</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Gary Klein</th>
+      <th class="title"><a href="https://sivers.org/book/SeeingWhatOthersDont">Seeing What Others Don&#39;t</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ben Fletcher and Karen Pine</th>
+      <th class="title"><a href="https://sivers.org/book/DoSomethingDifferent">Flex: Do Something Different</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Joel Brinkley</th>
+      <th class="title"><a href="https://sivers.org/book/CambodiaCurse">Cambodia&#39;s Curse</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Robert Kiyosaki</th>
+      <th class="title"><a href="https://sivers.org/book/ConspiracyOfTheRich">Conspiracy of the Rich</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Michael Port and Mina Samuels</th>
+      <th class="title"><a href="https://sivers.org/book/ThinkBigManifesto">The Think Big Manifesto</a></th>
+      <th class="review_author">Derek Sivers</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Alfred Lansing</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/endurance-alfred-lansing/">Endurance</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Rich Cohen</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/fish-ate-whale-rich-cohen/">The Fish that Ate the Whale</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Richard Feynman</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/surely-joking-mr-feynman-richard-feynman/">Surely You’re Joking Mr. Feynman</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/fail-everything-still-win-big-scott-adams/">How to Fail at Almost Everything and Still Win Big</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Antonio Garcia Martinez</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/chaos-monkeys-antonio-garcia-martinez/">Chaos Monkeys</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/dying-every-day-seneca-james-romm/">Dying Every Day: Seneca at the Court of Nero</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Robert Fisher</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/getting-yes-robert-fisher/">Getting to Yes</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Frank Luntz</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/words-work-frank-luntz/">Words that Work</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Chip and Dan Heath</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/made-stick-chip-dan-heath/">Made to Stick</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Scott Berkun</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/confessions-public-speaker-scott-berkun/">Confessions of a Public Speaker</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Keith Ferrazzi</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/never-eat-alone-keith-ferrazzi/">Never Eat Alone</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Dan Pink</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/sell-human-dan-pink/">To Sell is Human</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Steven Pressfield</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/war-art-steven-pressfield/">The War of Art</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Peter Bevelin</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lessons-seeking-wisdom-peter-bevelin/">Seeking Wisdom</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Shane Snow</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/smartcuts-shane-snow/">Smartcuts</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Chip and Dan Heath</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/decisive-chip-dan-heath/">Decisive</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Carol Tavris</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/mistakes-made-not-carol-tavris/">Mistakes Were Made but Not</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Barry Schwartz</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/paradox-choice-barry-schwartz/">The Paradox of Choice</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">William Deresiewicz</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/excellent-sheep-william-deresiewicz/">Excellent Sheep</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jeffrey Selingo</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/college-unbound-jeffrey-selingo/">College Unbound</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Madeline Levine</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/price-privilege-madeline-levine/">The Price of Privilege</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Timothy Ferriss</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/4-hour-workweek-timothy-ferriss/">The 4-hour Workweek</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Peter Theil</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/zero-one-peter-theil/">Zero to One</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Barry Schwartz</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/magic-thinking-big-david-schwartz/">The Magic of Thinking Big</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Randy Komisar</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/monk-riddle-randy-komisar/">The Monk and the Riddle</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jim Collins</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lessons-good-great-jim-collins/">Good to Great</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Brant Cooper</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lean-entrepreneur-brant-cooper/">The Lean Entrepreneur</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Chris Guillebeau</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/100-startup-chris-guillebeau/">The $100 Startup</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Peter Diamandis</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/bold-peter-diamandis/">Bold</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Michael Gerber</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/e-myth-michael-gerber/">The E-Myth</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Cal Newport</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/good-cant-ignore-cal-newport/">So Good They Can’t Ignore You</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Eric Reiss</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lean-startup-eric-reiss/">The Lean Startup</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Tony Robbins</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/money-master-game-tony-robbins/">Money Master the Game</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ramit Sethi</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lessons-will-teach-rich-ramit-sethi/">I Will Teach You to Be Rich</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Michael Lewis</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/liars-poker-michael-lewis/">Liar’s Poker</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Michael Lewis</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/flash-boys-michael-lewis/">Flash Boys</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Tim Ferriss</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/4-hour-chef-tim-ferriss/">The 4-Hour Chef</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David Perlmutter</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/grain-brain-david-perlmutter/">Grain Brain</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Judd Biasiotto</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/psych-judd-biasiotto/">Psych</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Will and Ariel Durant</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lessons-history-will-ariel-durant/">The Lessons of History</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">B.H. Liddell Hart</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/dont-learn-from-history-hart/">Why Don’t We Learn from History</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Gabriel Weinberg</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/fluent-forever-gabriel-weinberg/">Fluent Forever</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Benny Lewis</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/fluent-3-months-benny-lewis/">Fluent in 3 Months</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Bill Walsh</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/score-takes-care-bill-walsh/">The Score Takes Care of Itself</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Geoff Smart</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/who-geoff-smart/">Who</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ben Horowitz</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/hard-thing-hard-things-ben-horowitz/">The Hard Thing About Hard Things</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Robert Greene</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/48-laws-power-robert-greene/">The 48 Laws of Power</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jocko Willink and Leif Babin</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/extreme-ownership-jocko-willink-leif-babin/">Extreme Ownership</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Dan Buettner</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/blue-zones-dan-buettner/">Blue Zones</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jason Fried</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/remote-jason-fried/">Remote</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Al Ries</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lessons-22-immutable-laws-marketing-al-ries/">The 22 Immutable Laws of Marketing</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Gabriel Weinberg and Justin Mares</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/traction-gabriel-weinberg-justin-mares/">Traction</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Youngme Moon</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/different-youngme-moon/">Different</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Gary Halbert</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/boron-letters-gary-halbert/">The Boron Letters</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Alexandra Watkins</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/hello-name-awesome/">Hello My Name is Awesome</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Nir Eyal and Ryan Hoover</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/hooked-nir-eyal-ryan-hoover/">Hooked</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jonah Berger</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/contagious-jonah-berger/">Contagious</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">W. Chan Kim</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/blue-ocean-strategy-w-chan-kim/">Blue Ocean Strategy</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ryan Holiday</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/growth-hacker-marketing-ryan-holiday/">Growth Hacker Marketing</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/book-will-teach-write-better/">This Book Will Teach You How to Write Better</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Mark Manson</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/models-mark-manson/">Models</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David Deida</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/way-superior-man-david-deida/">The Way of the Superior Man</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Neil Strauss</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/truth-neil-strauss/">The Truth</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Neil Strauss</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/game-neil-strauss/">The Game</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Aziz Ansari</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/modern-romance-aziz-ansari/">Modern Romance</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Robert Greene</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/art-seduction-robert-greene/">The Art of Seduction</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Tucker Max</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/mate-women-want-tucker-max/">Mate (What Women Want)</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/zen-mind-beginners-mind-shunryu-suzuki/">Zen Mind Beginner’s Mind</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Dan Harris</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/10-happier-dan-harris/">10% Happier</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Sam Harris</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/waking-sam-harris/">Waking Up</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">James McKeown</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lessons-from-essentialism-by/">Essentialism</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Joshua Foyer</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/moonwalking-einstein-joshua-foyer/">Moonwalking with Einstein</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ray Dalio</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lessons-principles-ray-dalio/">Principles</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Tim Ferriss</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/tools-titans-tim-ferriss/">Tools of Titans</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/dialogues-socrates/">The Dialogues of Socrates</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Nassim Nicholas Taleb</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/antifragile/">Antifragile</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Seneca</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/letters-stoic-seneca/">Letters from a Stoic</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Nassim Nicholas Taleb</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/bed-procrustes-nassim-nicholas-taleb/">The Bed of Procrustes</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ralph Waldo Emerson</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/self-reliance-ralph-waldo-emerson/">Self-Reliance</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Nassim Nicholas Taleb</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/black-swan-nassim-nicholas-taleb/">The Black Swan</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Victor Frankl</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/mans-search-meaning-victor-frankl/">Man’s Search for Meaning</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/bhagavad-gita/">The Bhagavad Gita</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Lao Tzu</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lessons-tao-te-ching-lao-tzu/">Tao Te Ching</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Bruce Lee</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lessons-striking-thoughts-bruce-lee/">Striking Thoughts</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David Foster Wallace</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/water-david-foster-wallace/">This is Water</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Epictetus</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/discourses-epictetus/">Discourses</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Marcus Aurelius</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/meditations-marcus-aurelius/">Meditations</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Sam Harris</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lying-sam-harris/">Lying</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">James Allen</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/man-thinketh-james-allen/">As a Man Thinketh</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Marie Kondo</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/life-changing-magic-tidying-marie-kondo/">The Life-Changing Magic of Tidying Up</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Goethe</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/maxims-reflections-goethe/">Maxims and Reflections</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/nassim-taleb-aub-commencement-speech/">Nassim Taleb’s AUB Commencement Address</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Bertrand Russell</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/praise-idleness-bertrand-russell/">In Praise of Idleness</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Gordon Livingston</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/soon-old-late-smart-gordon-livingston/">Too Soon Old, Too Late Smart</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Henry David Thoreau</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/walden-henry-david-thoreau/">Walden</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Henry David Thoreau</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/civil-disobedience/">Civil Disobedience</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ryan Holiday</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/ego-enemy-ryan-holiday/">Ego is the Enemy</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Fareed Zakaria</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/post-american-world-fareed-zakaria/">The Post-American World</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Thomas Mann</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/even-worse-looks-thomas-mann/">It’s Even Worse Than it Looks</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Cal Newport</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/deep-work-cal-newport/">Deep Work</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Peter Drucker</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/effective-executive-peter-drucker/">The Effective Executive</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Neil Postman</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/amusing-death-neil-postman/">Amusing Ourselves to Death</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">J.D. Meier</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/getting-results-agile-way-j-d-meier/">Getting Results the Agile Way</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Atul Gawande</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/checklist-manifesto-atul-gawande/">The Checklist Manifesto</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jocelyn Glei</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/manage-day-day-jocelyn-glei/">Manage Your Day to Day</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Brian Tracy</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/eat-frog-brian-tracy/">Eat That Frog</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Tony Robbins</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/awaken-giant-within-tony-robbins/">Awaken the Giant Within</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Robert Greene</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/50th-law-robert-greene/">The 50th Law</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/cook-chef-musks-secret-sauce/">The Cook and the Chef: Musk’s Secret Sauce</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Kelly McGonigal</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/willpower-instinct/">The Willpower Instinct</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Charles Duhigg</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/power-habit-charles-duhigg/">The Power of Habit</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Nassim Nicholas Taleb</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/fooled-randomness-nassim-nicholas-taleb/">Fooled</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Steven Kotler</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/rise-superman-steven-kotler/">The Rise of Superman</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Nicholas Epley</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/mindwise-nicholas-epley/">Mindwise</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Derek Sivers</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/anything-want-derek-sivers/">Anything You Want</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Donald Sull</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/simple-rules-donald-sull/">Simple Rules</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">James Altucher</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lessons-power-no-james-altucher/">The Power of No</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">John Medina</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/brain-rules-john-medina/">Brain Rules</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Sam Sheridan</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/lessons-fighters-mind-sam-sheridan/">The Fighter’s Mind</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Yuval Noah Harari</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/sapiens-yuval-noah-harari/">Sapiens</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Stephen Hawking</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/brief-history-time-stephen-hawking/">A Brief History of Time</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Nick Bostrom</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/global-catastrophic-risks-nick-bostrom/">Global Catastophic Risks</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Nicholas Carr</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/shallows-nicholas-carr/">The Shallows</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/extended-massive-orgasm-steve-bodansky/">Extended Massive Orgasm</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Alain de Botton</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/think-sex-alain-de-botton/">How to Think More About Sex</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Anders Ericsson and Robert Pool</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/peak-anders-ericsson-robert-pool/">Peak</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Josh Waitzkin</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/art-learning-josh-waitzkin/">The Art of Learning</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Daniel Coyle</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/talent-code-daniel-coyle/">The Talent Code</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Daniel Coyle</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/little-book-of-talent/">The Little Book of Talent</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Thomas Sterner</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/practicing-mind-thomas-sterner/">The Practicing Mind</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Josh Kaufman</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/first-20-hours-josh-kaufman/">The First 20 Hours</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Kevin Kelly </th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/inevitable-kevin-kelly/">The Inevitable</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Rolf Potts</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/vagabonding-rolf-potts/">Vagabonding</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">William Zinssler</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/writing-well-william-zinsser/">On Writing Well</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Stephen King</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/writing-stephen-king/">On Writing</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">William Strunk</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/elements-style-william-strunk/">The Elements of Style</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Anne Lamott</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/bird-bird-anne-lamott/">Bird</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Paulo Coelho</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/alchemist-paulo-coelho/">The Alchemist</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Kurt Vonnegut</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/cats-cradle-kurt-vonnegut/">Cat’s Cradle</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/east-eden-john-steinbeck/">East of Eden John Steinbeck</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Charles Stross</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/accelerando-charles-stross/">Accelerando</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David Mitchel</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/cloud-atlas-david-mitchell/">Cloud Atlas</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Neal Stephenson</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/snow-crash-neal-stephenson/">Snow Crash</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Mohsin Hamid</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/filthy-rich-rising-asia-mohsin-hamid/">How to Get Filthy Rich in Rising Asia</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Budd Schulberg</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/what-makes-sammy-run-budd-schulberg/">What Makes Sammy Run</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Andy Weir</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/martian-andy-weir/">The Martian</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Chuck Palahniuk</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/fight-club-chuck-palahniuk/">Fight Club</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Bret Easton Ellis</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/american-psycho-bret-easton-ellis/">American Psycho</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Chuck Palahniuk</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/choke-chuck-palahniuk/">Choke</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ernest Hemingway</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/bell-tolls-ernest-hemingway/">For Whom the Bell Tolls</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Leo Tolstoy</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/anna-karenina-leo-tolstoy/">Anna Karenina</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">James Redfield</th>
+      <th class="title"><a href="https://www.nateliason.com/lessons/celestine-prophecy-james-redfield/">The Celestine Prophecy</a></th>
+      <th class="review_author">Nathaniel Eliason</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Grant Cardone</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/10x-rule">The 10X Rule</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Anna Quindlen</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/a-short-guide-to-a-happy-life">A Short Guide to a Happy Life</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">James Webb Young </th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/a-technique-for-producing-ideas">A Technique for Producing Ideas</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Tim Harford</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/adapt">Adapt</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Derek Sivers</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/anything-you-want">Anything You Want</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Tom Rath</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/are-you-fully-charged">Are You Fully Charged?</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Rosamund Zander and Benjamin Zander</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/the-art-of-possibility">The Art of Possibility</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Adrian Slywotzky</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/the-art-of-profitability">The Art of Profitability</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Sun Tzu</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/the-art-of-war">The Art of War</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Anne Lamott</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/bird-by-bird">Bird by Bird</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Steve Martin</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/born-standing-up">Born Standing Up</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Darren Hardy</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/the-compound-effect">The Compound Effect</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">John Perkins</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/confessions-of-an-economic-hitman">Confessions of an Economic Hitman</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Hermann Simon</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/confessions-of-the-pricing-man">Confessions of the Pricing Man</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Nassim Nicholas Taleb</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/fooled-by-randomness">Fooled by Randomness</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Sam Harris</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/free-will">Free Will</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Eliyahu Goldratt</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/the-goal">The Goal</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jared Diamond</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/guns-germs-and-steel">Guns, Germs, and Steel</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Hugh MacLeod</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/ignore-everybody">Ignore Everybody</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David Eagleman</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/incognito">Incognito</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Christopher Burkett</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/intimations-of-paradise">Intimations of Paradise</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Bryan Stevenson</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/just-mercy">Just Mercy</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Will and Ariel Durant</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/lessons-of-history">The Lessons of History</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">John Graham</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/letters-from-a-self-made-merchant-to-his-son">Letters from a Self-Made Merchant to His Son</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Kamal Ravikant</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/love-yourself-like-your-life-depends-on-it">Love Yourself Like Your Life Depends On It</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Epictetus</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/manual-for-living">Manual for Living</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Calvin Tomkins</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/marcel-duchamp-the-afternoon-interviews">Marcel Duchamp: The Afternoon Interviews</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Jayson Gaignard</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/mastermind-dinners">Mastermind Dinners</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">George Leonard</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/mastery">Mastery</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Laurence Shames and Peter Barton</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/not-fade-away">Not Fade Away</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Judith Rich Harris</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/nurture-assumption">The Nurture Assumption</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Oliver Sacks</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/on-the-move">On the Move: A Life</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Seneca</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/on-the-shortness-of-life">On the Shortness of Life</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Bob Nease</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/the-power-of-fifty-bits">The Power of Fifty Bits</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Thomas M. Sterner</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/the-practicing-mind">The Practicing Mind</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Naoki Higashida</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/the-reason-i-jump">The Reason I Jump</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Christopher Burkett</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/resplendent-light">Resplendent Light</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">George S. Clason</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/the-richest-man-in-babylon">The Richest Man in Babylon</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Ethan Hawke</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/rules-for-a-knight">Rules for a Knight</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Yuval Noah Harari</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/sapiens">Sapiens</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Benjamin Hardy</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/slipstream-time-hacking">Slipstream Time Hacking</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Timothy Wilson</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/strangers-to-ourselves">Strangers to Ourselves</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Dan Gilbert</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/stumbling-on-happiness">Stumbling on Happiness</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Mark Manson</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/the-subtle-art-of-not-giving-a-fck">The Subtle Art of Not Giving a F*ck</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Tynan</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/superhuman-by-habit">Superhuman by Habit</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">V.S. Ramachandran</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/the-tell-tale-brain">The Tell-Tale Brain</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">David Foster Wallace</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/this-is-water">This is Water</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Marshall Goldsmith</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/what-got-you-here-wont-get-you-there">What Got You Here Won’t Get You There</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Paul Kalanithi</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/when-breath-becomes-air">When Breath Becomes Air</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author">Spencer Johnson</th>
+      <th class="title"><a href="http://jamesclear.com/book-summaries/who-moved-my-cheese">Who Moved My Cheese?</a></th>
+      <th class="review_author">James Clear</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2017/04/26/notes-on-the-distracted-mind-ancient-brains-in-a-high-tech-world/">The Distracted Mind: Ancient Brains in a High-Tech World</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2017/03/21/notes-on-governing-the-commons-the-evolution-of-institutions-for-collective-action/">Governing the Commons: The Evolution of Institutions for Collective Action</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2017/03/15/notes-on-the-rationality-quotient-toward-a-test-of-rational-thinking/">The Rationality Quotient: Toward a Test of Rational Thinking</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2017/02/23/notes-on-seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed/">Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2017/02/23/notes-on-the-origin-of-consciousness-in-the-breakdown-of-the-bicameral-mind/">The Origin of Consciousness in the Breakdown of the Bicameral Mind</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/12/14/notes-on-intelligence-all-that-matters/">Intelligence: All That Matters</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/12/13/notes-on-uncontrolled-the-surprising-payoff-of-trial-and-error-for-business-politics-and-society/">Uncontrolled: The Surprising Payoff of Trial-and-Error for Business, Politics, and Society</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/12/10/notes-on-the-universal-pastime-sleep-and-rest-explained/">The Universal Pastime: Sleep and Rest Explained</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/12/09/notes-on-everything-is-fucked/">Everything is fucked</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/11/22/notes-on-the-beginning-of-infinity-explanations-that-transform-the-world/">The Beginning of Infinity: Explanations That Transform the World</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/11/06/notes-on-the-logic-of-failure-recognizing-and-avoiding-error-in-complex-situations/">The Logic Of Failure: Recognizing And Avoiding Error In Complex Situations</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/11/05/notes-on-the-future-of-decision-making-how-revolutionary-software-can-improve-the-ability-to-decide/">The Future of Decision Making: How Revolutionary Software Can Improve the Ability to Decide</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/10/26/notes-on-strangers-to-ourselves/">Strangers to Ourselves</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/09/25/notes-on-peak/">Peak</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/09/04/notes-on-the-world-beyond-your-head-on-becoming-an-individual-in-an-age-of-distraction/">The World Beyond Your Head: On Becoming an Individual in an Age of Distraction</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/08/18/notes-on-flow/">Flow</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/08/15/notes-on-so-good-they-cant-ignore-you/">So Good They Can</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/08/15/notes-on-how-not-to-be-wrong/">How Not To Be Wrong: The Power of Mathematical Thinking</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/08/15/notes-on-drive/">Drive</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/08/15/notes-on-how-to-read-a-book/">How To Read a Book</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/06/17/notes-on-a-small-matter-of-programming-perspectives-on-end-user-computing/">A Small Matter of Programming: Perspectives on End User Computing</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/06/03/notes-on-made-to-stick-why-some-ideas-survive-and-others-die/">Made to Stick: Why Some Ideas Survive and Others Die</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/06/03/notes-on-stumbling-on-happiness/">Stumbling on Happiness</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/05/19/notes-on-natural-born-cyborgs-minds/">Natural-Born Cyborgs: Minds, Technologies, and the Future of Human Intelligence</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/05/12/notes-on-intelligence-and-how-to-get-it-why-schools-and-cultures-count/">Intelligence and How to Get It: Why Schools and Cultures Count</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/05/08/notes-on-the-curse-of-the-self-self-awareness/">The Curse of the Self: Self-Awareness, Egotism, and the Quality of Human Life</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/05/06/notes-on-the-mind-is-flat/">The Mind is Flat</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/04/17/notes-on-switch-how-to-change-things-when-change-is-hard/">Switch: How to Change Things When Change Is Hard</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/04/17/notes-on-calm-technology-principles-and-patterns-for-non-intrusive-design/">Calm Technology: Principles and Patterns for Non-Intrusive Design</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/04/16/notes-on-deep-work-rules-for-focused-success-in-a-distracted-world/">Deep Work: Rules for Focused Success in a Distracted World</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/04/10/notes-on-decisive-how-to-make-better-choices-in-life-and-work/">Decisive: How to Make Better Choices in Life and Work</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/03/02/notes-on-essentialism-the-disciplined-pursuit-of-less/">Essentialism: The Disciplined Pursuit of Less</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/03/02/notes-on-waking-up-a-guide-to-spirituality-without-religion/">Waking Up: A Guide To Spirituality Without Religion</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/01/29/notes-on-what-intelligence-tests-miss-the-psychology-of-rational-thought/">What Intelligence Tests Miss: The Psychology of Rational Thought</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/01/28/notes-on-reinventing-discovery-the-new-era-of-networked-science/">Reinventing Discovery: The New Era of Networked Science</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/01/28/notes-on-the-man-who-lied-to-his-laptop/">The Man Who Lied To His Laptop</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/01/28/notes-on-your-brain-at-work/">Your Brain at Work</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/01/28/notes-on-the-signal-and-the-noise/">The Signal and the Noise</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/01/28/notes-on-the-checklist-manifesto/">The Checklist Manifesto</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/01/28/notes-on-superforecasting-the-art-and-science-of-prediction/">Superforecasting: The Art and Science of Prediction</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/01/28/notes-on-nudge-improving-decisions-about-health/">Nudge: Improving Decisions About Health</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    <tr>
+      <th class="author"></th>
+      <th class="title"><a href="http://scattered-thoughts.net/blog/2016/01/28/notes-on-mindware-tools-for-smart-thinking/">Mindware: Tools for Smart Thinking</a></th>
+      <th class="review_author">Jamie Brandon</th>
+    </tr>
+    
+    </tbody>
+  </table>
+</div>
+
+
+<section class="footer">
+	<div class="copyright small-6 small-centered columns">
+	From Cracow with <span class="heart">💜</span> by <a href="https://ecneladis.github.io">ecneladis</a>.
+	</div>
+</section>
+</body>
+</html>
+
