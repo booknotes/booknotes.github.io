@@ -6,6 +6,7 @@ $(document).ready(function() {
         "columns": [
             { "data": "author" },
             { "data": "title" },
+            { "data": "goodreads_rating" },
             { "data": "review_author" },
         ]
     } );
