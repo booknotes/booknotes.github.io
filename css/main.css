@@ -10,14 +10,17 @@ select {
   font-family: 'Merriweather', serif;
  }
 
-section.footer .copyright {
+section.footer {
   padding: 24px 0 10px;
   flex-grow: 0.5;
-  text-align: start;
   color: #666666;
   font-size: 14px;
   opacity: 0.8;
 }
+section.footer div.greetings {
+  text-align: right;
+}
+
 span.heart {
   color: darkred;
   font-weight: bold;
